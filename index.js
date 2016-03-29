@@ -1,4 +1,3 @@
-var async = require('async');
 var express = require('express');
 var mongoose = require('mongoose');
 var config = require('config');
