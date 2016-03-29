@@ -1,0 +1,14 @@
+{
+    // Port express will listen on
+    "port":3000,
+    
+    "db": {
+        // MongoDB URI string
+        "uri":"localhost:27017/hello_giphy"
+    },
+    
+    "giphy": {
+        // Giphy API Key. Note this is the public beta key which has rate limits.
+        "apiKey":"dc6zaTOxFJmzC"
+    }
+}

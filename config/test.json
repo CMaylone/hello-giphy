@@ -1,0 +1,6 @@
+{
+    "db": {
+        // MongoDB URI string
+        "uri": "localhost:27017/hello_giphy_test"
+    }
+}
