@@ -50,7 +50,7 @@ const BASE_URL = '/api/:version/';
 app.use(path.join(BASE_URL, 'user'), require('./routes/user'));
 app.use(path.join(BASE_URL, 'giphy'), require('./routes/giphy'));
 
-mongoose.connect(config.get('db.uri'), function(err) {
+mongoose.connect(process.env.MONGOLAB_URI || config.get('db.uri'), function(err) {
     if (err) {
         throw new Error(err); // Fail fast if we can't connnect to MongoDB
     } else {
