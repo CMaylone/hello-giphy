@@ -41,7 +41,7 @@ This project exists live on Heroku:
 
 *none*
 
-**body**
+**Body**
 
 | Attribute | Description | Type |
 |-----------|-------------|------|
