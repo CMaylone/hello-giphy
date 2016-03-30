@@ -54,7 +54,7 @@ mongoose.connect(process.env.MONGOLAB_URI || config.get('db.uri'), function(err)
     if (err) {
         throw new Error(err); // Fail fast if we can't connnect to MongoDB
     } else {
-        var server = app.listen(config.get('port'), function() {
+        var server = app.listen(process.env.PORT || config.get('port'), function() {
             console.log('hello-giphy is listening on port', server.address().port)
         });
     }
